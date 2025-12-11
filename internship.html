@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship | Beatrice Manuel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Cursor pointer for clickable images */
+        .zoomable { cursor: pointer; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <div class="max-w-7xl w-full bg-white rounded-30 p-6 md:p-10 shadow-2xl border border-gray-200">
+        
+        <nav class="flex justify-between items-center mb-10 px-2">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center group-hover:bg-gray-800 transition">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                       <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                   </svg>
+                </div>
+                <span class="font-bold text-xl leading-tight tracking-tight">Beatrice<br>Manuel</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-500">
+                <a href="resume.html" class="hover:text-black transition">Resume</a>
+                <a href="internship.html" class="text-black font-bold border-b-2 border-black pb-0.5">Internship</a>
+                <a href="projects.html" class="hover:text-black transition">Projects</a>
+                <a href="reflections.html" class="hover:text-black transition">Reflections</a>
+            </div>
+        </nav>
+
+        <div class="mb-8 px-2">
+            <h1 class="text-4xl font-bold">Globe Internship Accomplishments</h1>
+            <p class="text-gray-500 mt-2">Automation Team | September 8 - December 10, 2025</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <div class="md:col-span-12 bg-black text-white rounded-30 p-8 md:p-12 relative overflow-hidden flex flex-col justify-between">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold">HERO PROJECT</span>
+                        <span class="text-gray-400 text-sm">Automation Team</span>
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">CAC Automation (ACL Checker)</h2>
+                    <p class="text-gray-300 leading-relaxed text-xl mb-10 max-w-3xl">
+                        Addressed security backlogs by automating the auditing of 6 key webtools. 
+                        We proposed solutions using <strong>Python Streamlit</strong> to replace a costly (Php 120k) and slow manual process.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-gray-700 pt-8">
+                        <div>
+                            <div class="text-4xl font-bold text-yellow-400">&lt;15 mins</div>
+                            <div class="text-sm text-gray-400 mt-2">Turnaround Time<br>(Reduced from 1hr)</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-yellow-400">4</div>
+                            <div class="text-sm text-gray-400 mt-2">Solutions Evaluated<br>(AppSheet, Airtable, etc.)</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-yellow-400">100%</div>
+                            <div class="text-sm text-gray-400 mt-2">Backlog Elimination</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -right-20 -bottom-40 w-96 h-96 bg-gray-800 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            </div>
+
+            <div class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 rounded-30 overflow-hidden border border-gray-200 shadow-lg group h-64">
+                    <img src="assets/images/CXMaudit.png" onclick="openModal(this.src)" alt="Audit Dashboard" class="zoomable w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                </div>
+                <div class="bg-gray-100 rounded-30 overflow-hidden border border-gray-200 shadow-lg group h-64">
+                    <img src="assets/images/CXMaudit2.jpg" onclick="openModal(this.src)" alt="Audit Table View" class="zoomable w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                </div>
+            </div>
+
+            <div class="md:col-span-12 bg-[#f2f2f0] rounded-30 p-8 md:p-12 border border-gray-300 bento-card">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="mb-4">
+                            <span class="bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-bold text-gray-600">SYSTEM ANALYSIS</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">eSIM User Journey Mapping</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            Mapped detailed sequence diagrams for new eSIM acquisition and pSIM conversions. We visualized complex interactions between the GlobeOne app and backend systems like <strong>NG1, CXS, and RAVEN</strong>.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                        <h4 class="font-bold text-lg mb-4">Key Workflows Analyzed</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i> 
+                                New Acquisition (Traveler/Local)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i> 
+                                Prepaid to Postpaid Conversion
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i> 
+                                Backend Error Handling & Architecture
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-12 mt-2">
+                <h2 class="text-3xl font-bold mb-2">Culture & Team Events</h2>
+            </div>
+
+            <div class="md:col-span-12 bg-[#fbbf24] rounded-30 p-8 md:p-12 border border-black/5 relative overflow-hidden group">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
+                    <div>
+                        <div class="inline-block bg-white text-black px-3 py-1 rounded-full text-xs font-bold mb-4">DECEMBER 4-5, 2025</div>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-4">Year End Party</h2>
+                        <h3 class="text-xl font-medium mb-6 opacity-80">Service Ops @ Estancia de Lorenzo</h3>
+                        <p class="text-gray-900 leading-relaxed text-lg mb-6">
+                            This event celebrated the team's achievements. I actively participated in video editing challenges, tech sessions, and group games, contributing to a lively and inclusive celebration.
+                        </p>
+                        <div class="flex items-center gap-2 font-bold text-sm">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i> San Mateo, Rizal
+                        </div>
+                    </div>
+                    <div class="relative h-64 md:h-80 w-full shadow-xl rounded-2xl overflow-hidden border-4 border-white rotate-1 group-hover:rotate-0 transition duration-500">
+                        <img src="assets/images/IMG_8592.jpg" alt="Year End Party" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none"></div>
+            </div>
+
+            <div class="md:col-span-6 lg:col-span-4 bg-[#f2f2f0] rounded-30 overflow-hidden border border-gray-300 relative group h-64 bento-card">
+                <img src="assets/images/Devcon.jpg" alt="DEVCON 2025" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-yellow-400 text-xs font-bold mb-1">INNOVATION</span>
+                    <h3 class="text-white text-xl font-bold">DEVCON 2025</h3>
+                    <p class="text-gray-300 text-xs mt-1">Showcasing DAISI to tech enthusiasts.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-6 lg:col-span-4 bg-[#f2f2f0] rounded-30 overflow-hidden border border-gray-300 relative group h-64 bento-card">
+                <img src="assets/images/IMG_8673.jpg" alt="Team Bonding" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-yellow-400 text-xs font-bold mb-1">TEAM BONDING</span>
+                    <h3 class="text-white text-xl font-bold">Estancia Night</h3>
+                    <p class="text-gray-300 text-xs mt-1">Building connections with Ka-Ops.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-4 bg-white rounded-30 p-6 border border-gray-200 flex flex-col justify-center h-64 bento-card">
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="award" class="text-yellow-500"></i> Internship Takeaways
+                </h3>
+                <div class="space-y-4 text-sm">
+                    <div class="flex gap-3">
+                        <div class="min-w-[4px] bg-gray-200 rounded-full h-auto"></div>
+                        <p class="text-gray-600 text-xs">
+                            <strong class="text-black block text-sm mb-0.5">Cost vs. Efficiency</strong>
+                            Evaluating solutions taught me to balance security and cost constraints.
+                        </p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="min-w-[4px] bg-gray-200 rounded-full h-auto"></div>
+                        <p class="text-gray-600 text-xs">
+                            <strong class="text-black block text-sm mb-0.5">Public Speaking</strong>
+                            Leading the booth at DEVCON and Halloween boosted my professional confidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+        <span class="absolute top-6 right-8 text-white text-5xl cursor-pointer hover:text-gray-300">&times;</span>
+        <img id="modalImage" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl border-2 border-white/20" onclick="event.stopPropagation()" />
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = src;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

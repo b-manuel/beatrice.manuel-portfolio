@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections | Beatrice Manuel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <div class="max-w-7xl w-full bg-white rounded-30 p-6 md:p-10 shadow-2xl border border-gray-200">
+        
+        <nav class="flex justify-between items-center mb-10 px-2">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center group-hover:bg-gray-800 transition">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                       <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                   </svg>
+                </div>
+                <span class="font-bold text-xl leading-tight tracking-tight">Beatrice<br>Manuel</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-500">
+                <a href="resume.html" class="hover:text-black transition">Resume</a>
+                <a href="internship.html" class="hover:text-black transition">Internship</a>
+                <a href="projects.html" class="hover:text-black transition">Projects</a>
+                <a href="reflections.html" class="text-black font-bold border-b-2 border-black pb-0.5">Reflections</a>
+            </div>
+        </nav>
+
+        <div class="mb-8 px-2">
+            <h1 class="text-4xl font-bold">Technical Journey & Growth</h1>
+            <p class="text-gray-500 mt-2">Reflecting on key projects from University to Enterprise Internship.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-black text-white p-8 md:p-10 rounded-30 border border-gray-800 bento-card relative overflow-hidden flex flex-col justify-between">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Internship</span>
+                        <span class="text-gray-400 text-sm">CAC Project</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">The Impact of Automation</h2>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        The CAC Automation project was a pivotal moment in my internship. We were tasked with replacing a costly manual audit process. 
+                        Evaluating solutions like AppSheet versus <strong>Python Streamlit</strong> taught me that development isn't just about code—it's about balancing <strong>cost, speed, and security</strong>.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Seeing the turnaround time drop from <strong>1 hour to under 15 minutes</strong> demonstrated the tangible business value of the systems we build.
+                    </p>
+                </div>
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-gray-800 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            </div>
+
+            <div class="bg-[#f2f2f0] p-8 md:p-10 rounded-30 border border-gray-300 bento-card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-white px-3 py-1 rounded-full text-xs font-bold text-gray-600 uppercase tracking-wide border border-gray-200">System Design</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Connecting Frontend to Backend</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Mapping the <strong>eSIM User Journey</strong> challenged me to look beyond the user interface. I had to visualize how a simple tap in the GlobeOne app triggers complex interactions across backend systems like <strong>NG1, CXS, and RAVEN</strong>.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        It highlighted the importance of error handling—planning for what happens when a QR code fails or a payment gateway times out.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#fbbf24] p-8 md:p-10 rounded-30 border border-black/5 bento-card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-white/40 px-3 py-1 rounded-full text-xs font-bold text-black uppercase tracking-wide">Data Analytics</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Mastering Data Storytelling</h2>
+                    <p class="text-gray-900 leading-relaxed mb-4">
+                        My university projects, specifically the <strong>Global Sales Analytics</strong> and <strong>Population Dashboards</strong>, pushed me to learn DAX and M languages deeply.
+                    </p>
+                    <p class="text-gray-900 leading-relaxed">
+                        I learned that data is only as useful as its presentation. Creating interactive visualizations for COGS and revenue allowed me to transform raw numbers into actionable business insights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#f2f2f0] p-8 md:p-10 rounded-30 border border-gray-300 bento-card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-white px-3 py-1 rounded-full text-xs font-bold text-gray-600 uppercase tracking-wide">Software Dev</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Building Full-Stack Solutions</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Developing the <strong>Digitalized Pharmaceutical Management System</strong> and the <strong>Clinic Queue Console</strong> using C# and SQL gave me my first taste of full-stack logic.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        These projects taught me how to manage databases effectively using SQL Server and how to structure applications using the MVC pattern to ensure scalability.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
